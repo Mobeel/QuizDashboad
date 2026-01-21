@@ -28,7 +28,7 @@ col3, col4 = st.columns(2)
 with col1:
     fig1 = px.choropleth(filtered_df, locations="Country Code", color="Access to electricity (% of population)",
                          color_continuous_scale="Blues", height=250)
-    fig1.update_layout(margin=dict(l=0, r=0, t=30, b=0)) # Margin kam kiya
+    fig1.update_layout(margin=dict(l=0, r=0, t=40, b=0)) # Margin kam kiya
     st.plotly_chart(fig1, use_container_width=True)
 
 with col2:
@@ -50,6 +50,7 @@ with col4:
     fig4.update_layout(margin=dict(l=0, r=0, t=30, b=0))
 
     st.plotly_chart(fig4, use_container_width=True)
+
 
 
 
