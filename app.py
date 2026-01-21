@@ -16,7 +16,7 @@ df = load_data()
 
 # 3. Interaction Sidebar
 st.sidebar.header("Interactive Filters")
-selected_year = st.sidebar.slider("Select Year", 1990, 2020, 2018)
+selected_year = st.sidebar.slider("Select Year", 1990, 2018)
 
 filtered_df = df[df['year'] == selected_year].dropna(subset=['Access to electricity (% of population)', 'GDP per capita (current US$)'])
 
@@ -50,4 +50,5 @@ with col4:
     fig4.update_layout(margin=dict(l=0, r=0, t=30, b=0))
 
     st.plotly_chart(fig4, use_container_width=True)
+
 
