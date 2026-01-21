@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # 1. Page Configuration
-st.set_page_config(layout="wide", page_title="Global Development Dashboard")
+st.set_page_config(layout="small", page_title="Global Development Dashboard")
 st.title("📊 Global Infrastructure & Economic Report")
 
 # 2. Load Dataset
@@ -50,6 +50,7 @@ with col4:
     fig4.update_layout(margin=dict(l=0, r=0, t=30, b=0))
 
     st.plotly_chart(fig4, use_container_width=True)
+
 
 
 
